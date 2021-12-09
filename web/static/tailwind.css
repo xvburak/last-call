@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+    html, body {
+        font-size: 14px;
+    }   
+}
+
+@media (min-width: 1536px) {
+    html, body {
+        font-size: 16px;
+    }   
+}
+
+
+
+a {
+    @apply hover:text-gray-700
+}

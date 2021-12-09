@@ -1,11 +1,16 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+	import Head from '../components/Head.svelte';
+	import Foot from '../components/Foot.svelte';
 
 	export let segment;
 </script>
 
-<Nav {segment}/>
+<div>
+	<Head {segment}/>
+	
+	<main>
+		<slot></slot>
+	</main>
+</div>
 
-<main>
-	<slot></slot>
-</main>
+<Foot {segment}/>
