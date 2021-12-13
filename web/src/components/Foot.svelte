@@ -1,21 +1,36 @@
 <script>
-	// export let segment;
+  import { onMount} from 'svelte';
+
+  let date = new Date();
+	$: fullDate = date.toDateString();
+	$: hour = (date.getHours()<10?'0':'') + date.getHours();
+	$: min = (date.getMinutes()<10?'0':'') + date.getMinutes();
+	$: sec = (date.getSeconds()<10?'0':'') + date.getSeconds();
+
+  onMount(() => {
+    const interval = setInterval(() => {
+      date = new Date();
+    }, 1000);
+  });
+
 </script>
+
 
 <footer class="flex flex-wrap border-t border-gray-300 py-2">
 
-	<div class="w-1/5">
-		<p>© 2021</p>
+  <ul class="flex sm:w-4/6">
+    <li class="mr-4"><a href='.'>Email</a></li>
+    <li class="mr-4"><a href='.'>Instagram</a></li>
+    <li class="mr-4"><a href='.'>Are.na</a></li>
+    <li class="mr-4"><a href='.'>LinkedIn</a></li>
+    <li class="mr-4"><a href='.'>Spotify</a></li>
+  </ul>
+  <div class="sm:flex sm:w-2/6 sm:justify-end hidden">
+    <div class="mr-4">
+		{fullDate}
 	</div>
-	<ul class="flex w-2/5">
-		<li class="mr-4"><a href='.'>Email</a></li>
-		<li class="mr-4"><a href='.'>Instagram</a></li>
-		<li class="mr-4"><a href='.'>Are.na</a></li>
-		<li class="mr-4"><a href='.'>LinkedIn</a></li>
-		<li class="mr-4"><a href='.'>Spotify</a></li>
-	</ul>
-	<div class="flex w-2/5 justify-end">
-		<p class="mr-4">Tuesday Dec 7 2021</p>
-		<p>14:22:42</p>
+	<div> 
+		{hour} : {min} : {sec}
 	</div>
+  </div>
 </footer>

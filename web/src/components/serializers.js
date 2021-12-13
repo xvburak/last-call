@@ -7,6 +7,7 @@ import client from '../sanityClient';
 import Image from './Image.svelte';
 import Code from './Code.svelte';
 import Author from './Author.svelte';
+import Category from './Category.svelte';
 import Link from './Link.svelte';
 
 const urlFor = source => urlBuilder(client).image(source);
@@ -44,6 +45,13 @@ export default {
       childNodes: children,
       props: {
         author,
+      },
+    }),
+    categoryReference: ({ children, node: { category } }) => ({
+      component: Category,
+      childNodes: children,
+      props: {
+        category,
       },
     }),
   },

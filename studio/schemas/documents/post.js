@@ -22,8 +22,18 @@ export default {
       }
     },
     {
+      name: 'deliverables',
+      type: 'string',
+      title: 'Deliverables',
+      description: 'Strategy, research, etc.'
+    },
+    {
       name: 'publishedAt',
-      type: 'datetime',
+      type: 'date',
+        options: {
+          dateFormat: 'YYYY-MM-DD',
+          calendarTodayLabel: 'Today'
+        },
       title: 'Published at',
       description: 'This can be used to schedule post for publishing'
     },
