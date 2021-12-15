@@ -10,13 +10,26 @@ html, body {
     @apply font-mono text-sm text-gray-500
 }
 
-@media (min-width: 1280px) {
+div.big {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    div.small {
+        display: none;
+    }
+    div.big {
+        display: initial;
+    }
+}
+
+@media (min-width: 1300px) {
     html, body {
         font-size: 14px;
     }   
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1550px) {
     html, body {
         font-size: 16px;
     }   
@@ -29,5 +42,5 @@ a {
 }
 
 a div {
-    @apply hover:text-black hover:bg-yellow-100
+    @apply hover:text-black hover:bg-lime-100
 }

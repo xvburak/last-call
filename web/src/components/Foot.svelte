@@ -22,15 +22,14 @@
     <li class="mr-4"><a href='.'>Email</a></li>
     <li class="mr-4"><a href='.'>Instagram</a></li>
     <li class="mr-4"><a href='.'>Are.na</a></li>
-    <li class="mr-4"><a href='.'>LinkedIn</a></li>
     <li class="mr-4"><a href='.'>Spotify</a></li>
   </ul>
   <div class="sm:flex sm:w-2/6 sm:justify-end hidden">
     <div class="mr-4">
 		{fullDate}
-	</div>
-	<div> 
-		{hour} : {min} : {sec}
-	</div>
+	  </div>
+    <div> 
+      {hour} : {min} : {sec}
+    </div>
   </div>
 </footer>

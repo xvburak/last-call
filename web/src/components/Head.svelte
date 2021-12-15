@@ -2,14 +2,12 @@
 	export let segment;
 </script>
 
-<nav class="flex flex-wrap border-b border-gray-300 py-2 mb-8">
+<nav class="flex sm:justify-start justify-between border-b border-gray-300 py-2 mb-8">
 
-	<div class="w-2/6">
+	<div class="sm:w-2/6">
 		<a class="" href='.'>Vasil Burak</a>
 	</div>
-	<ul class="flex w-2/6">
-		<!-- <li class="mr-4"><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li> -->
-		<li class="mr-4"><a class='{segment === "about" ? "selected" : ""}' href='about'>Information</a></li>
-		<!-- <li class="mr-4"><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li> -->
-	</ul>
+	<div class="sm:w-2/6 justify-end">
+		<a class='{segment === "about" ? "selected" : ""}' href='about'>Information</a>
+	</div>
 </nav>
