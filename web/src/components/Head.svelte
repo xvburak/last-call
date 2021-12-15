@@ -8,6 +8,6 @@
 		<a class="" href='.'>Vasil Burak</a>
 	</div>
 	<div class="sm:w-2/6 justify-end">
-		<a class='{segment === "about" ? "selected" : ""}' href='about'>Information</a>
+		<a class='{segment === "information" ? "selected" : ""}' href='information'>Information</a>
 	</div>
 </nav>

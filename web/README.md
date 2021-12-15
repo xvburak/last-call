@@ -38,8 +38,8 @@ This is the heart of your Sapper app. There are two kinds of routes — _pages_,
 
 There are three simple rules for naming the files that define your routes:
 
-- A file called `src/routes/about.html` corresponds to the `/about` route. A file called `src/routes/blog/[slug].html` corresponds to the `/blog/:slug` route, in which case `params.slug` is available to the route
-- The file `src/routes/index.html` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.html` is treated the same as `src/routes/about.html`.
+- A file called `src/routes/information.html` corresponds to the `/information` route. A file called `src/routes/blog/[slug].html` corresponds to the `/blog/:slug` route, in which case `params.slug` is available to the route
+- The file `src/routes/index.html` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/information/index.html` is treated the same as `src/routes/information.html`.
 - Files and directories with a leading underscore do _not_ create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would _not_ create a `/_helpers/datetime` route
 
 ### static
